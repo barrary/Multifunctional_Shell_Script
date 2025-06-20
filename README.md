@@ -115,4 +115,3 @@ chmod +x *.sh
 
 ```
 barrary
-```
