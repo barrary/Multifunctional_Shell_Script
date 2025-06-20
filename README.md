@@ -12,7 +12,6 @@
 ---
 
 ## 目录结构
-
 .
 ├── Multifunctional_Script.sh # 主入口整合脚本，包含全部功能
 ├── MANAGE_SERVICE.sh # 服务管理功能模块（启动、停止、重启、状态查询）
