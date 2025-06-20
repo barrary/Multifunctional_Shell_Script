@@ -15,14 +15,14 @@
 ```
 
 .
- ├── Multifunctional_Script.sh       # 主入口整合脚本，包含全部功能
- ├── MANAGE_SERVICE.sh               # 服务管理功能模块（启动、停止、重启、状态查询）
- ├── BACKUP_FILES.sh                 # 文件与目录备份模块
- ├── SYSTEM_INSPECTION.sh            # 系统巡检功能模块（主机名、OS版本、CPU、内存、磁盘等）
- ├── PORT_CHECK.sh                   # 端口监听检查模块
- ├── main.sh                        # 备用测试或演示脚本
- ├── README.md                      # 项目说明文档（你正在阅读的文件）
- └── LICENSE                       # 开源许可证文件
+├── Multifunctional_Script.sh # 主入口整合脚本，包含全部功能
+├── MANAGE_SERVICE.sh # 服务管理功能模块（启动、停止、重启、状态查询）
+├── BACKUP_FILES.sh # 文件与目录备份模块
+├── SYSTEM_INSPECTION.sh # 系统巡检功能模块（主机名、OS版本、CPU、内存、磁盘等）
+├── PORT_CHECK.sh # 端口监听检查模块
+├── main.sh # 备用测试或演示脚本
+├── README.md # 项目说明文档（你正在阅读的文件）
+└── LICENSE # 开源许可证文件
 
 ```
 ## 功能介绍
