@@ -9,7 +9,7 @@ echo -e "\033[36mWelcome to the All-in-One Utility Script\033[0m"
 # Main Entry Point
 echo -e "\033[33mPlease select a service to proceed:\033[0m"
 echo -e "\033[35m1. Service Management"
-echo "2. File Backup"
+echo -e "2. File Backup"
 echo -e "3. System Inspection"
 echo -e "4. Port Status Check\033[0m"
 read -p $'\033[33mYour choice: \033[0m' CHOICE
