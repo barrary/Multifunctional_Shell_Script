@@ -70,6 +70,8 @@ chmod +x *.sh
 
 ```
 ./main.sh
+或者直接运行整合脚本 
+./Multifunctional_Script.sh
 ```
 
 4. 按照菜单提示操作即可
