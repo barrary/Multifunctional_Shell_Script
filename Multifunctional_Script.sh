@@ -12,6 +12,27 @@ MANAGE_SERVICE () {
     fi
 
     read -p $'\033[33mPlease specify the service name to operate on: \033[0m' SERVICE
+    if [ -z "$SERVICE" ];then
+      echo -e "\033[31mService name cannot be empty\033[0m"
+    fi
+
+    SERVICE_NAME="$SERVICE"
+    [[ "$SERVICE_NAME" != *.service ]] && SERVICE_NAME="$SERVICE_NAME.service"
+
+    if systemctl list-unit-files | grep -qw "^$SERVICE_NAME"; then
+    :
+    else
+        MATCHES=$(systemctl list-unit-files | awk '{print $1}' | grep -i "$SERVICE")
+        if [ -z "$MATCHES" ]; then
+            echo -e "\033[31mService '$SERVICE' does not exist or is not recognized by systemctl.\033[0m"
+            exit 3
+        else
+            echo -e "\033[31mNo exact match found for '$SERVICE'. Did you mean one of these?\033[0m"
+            echo "$MATCHES"
+            exit 4
+        fi
+    fi
+
     case $ACTION in
         stop)
             systemctl stop $SERVICE
